@@ -1,0 +1,49 @@
+# STM32 Boards
+
+menu.device_variant=Variant
+menu.bootloader_version=Bootloader version
+menu.upload_method=Upload method
+menu.cpu_speed=CPU Speed(MHz)
+menu.opt=Optimize
+
+
+
+##############################################################
+minhUNO32_BLE.name=MinhUNO32 BLE
+
+minhUNO32_BLE.build.board=MINHUNO32_BLE
+minhUNO32_BLE.vid.0=0x1EAF
+minhUNO32_BLE.pid.0=0x0004
+minhUNO32_BLE.build.usb_product="MinhUNO32 BLE"
+minhUNO32_BLE.build.core=maple
+minhUNO32_BLE.build.cpu_flags=-DMCU_STM32F103CB -DSERIAL_USB
+minhUNO32_BLE.build.variant=minhuno32_ble
+minhUNO32_BLE.upload.usbID=1EAF:0003
+
+
+minhUNO32_BLE.upload.tool=maple_upload
+minhUNO32_BLE.upload.protocol=maple_dfu
+minhUNO32_BLE.upload.use_1200bps_touch=false
+minhUNO32_BLE.upload.file_type=bin
+minhUNO32_BLE.upload.auto_reset=true
+
+minhUNO32_BLE.build.vect=VECT_TAB_ADDR=0x8002000
+minhUNO32_BLE.build.ldscript=ld/bootloader_20.ld
+minhUNO32_BLE.upload.maximum_size=122880
+minhUNO32_BLE.upload.maximum_data_size=20480
+minhUNO32_BLE.upload.altID=2
+
+#-- CPU Clock frequency
+minhUNO32_BLE.menu.cpu_speed.speed_72mhz=72MHz (Normal)
+minhUNO32_BLE.menu.cpu_speed.speed_72mhz.build.f_cpu=72000000L
+
+minhUNO32_BLE.menu.cpu_speed.speed_48mhz=48MHz (Slow - with USB)
+minhUNO32_BLE.menu.cpu_speed.speed_48mhz.build.f_cpu=48000000L
+
+#-- Optimizations
+minhUNO32_BLE.build.flags.optimize=-Os
+minhUNO32_BLE.build.flags.ldspecs=
+
+
+
+##############################################################

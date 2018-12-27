@@ -17181,15 +17181,6 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <rectangle x1="-0.225" y1="0.8" x2="0.225" y2="1.4" layer="51"/>
 <rectangle x1="-1.175" y1="0.8" x2="-0.725" y2="1.4" layer="51"/>
 </package>
-<package name="3015" urn="urn:adsk.eagle:footprint:5760617/1" library_version="18" library_locally_modified="yes">
-<smd name="1" x="-1.05" y="0" dx="1.1" dy="3.2" layer="1"/>
-<smd name="2" x="1.05" y="0" dx="1.1" dy="3.2" layer="1"/>
-<wire x1="0" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="0" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
-</package>
 <package name="MSOP-8" urn="urn:adsk.eagle:footprint:6695530/1" library_version="18" library_locally_modified="yes">
 <wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
@@ -17230,6 +17221,20 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <wire x1="-7" y1="13" x2="-7" y2="-5.5" width="0.127" layer="21"/>
 <text x="-6.5" y="11" size="1.27" layer="25">HM-11</text>
 </package>
+<package name="INDC6161X450" urn="urn:adsk.eagle:footprint:4708509/1" library_version="20" library_locally_modified="yes">
+<description>Chip, 6.10 X 6.10 X 4.50 mm body
+&lt;p&gt;Chip package with body size 6.10 X 6.10 X 4.50 mm&lt;/p&gt;</description>
+<wire x1="3.1" y1="3.4286" x2="-3.1" y2="3.4286" width="0.12" layer="21"/>
+<wire x1="3.1" y1="-3.4286" x2="-3.1" y2="-3.4286" width="0.12" layer="21"/>
+<wire x1="3.1" y1="-3.1" x2="-3.1" y2="-3.1" width="0.12" layer="51"/>
+<wire x1="-3.1" y1="-3.1" x2="-3.1" y2="3.1" width="0.12" layer="51"/>
+<wire x1="-3.1" y1="3.1" x2="3.1" y2="3.1" width="0.12" layer="51"/>
+<wire x1="3.1" y1="3.1" x2="3.1" y2="-3.1" width="0.12" layer="51"/>
+<smd name="1" x="-2.225" y="0" dx="2.4791" dy="6.2291" layer="1" roundness="20"/>
+<smd name="2" x="2.225" y="0" dx="2.4791" dy="6.2291" layer="1" roundness="20"/>
+<text x="0" y="4.0636" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4.0636" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TSOT23-6" urn="urn:adsk.eagle:package:5549507/2" type="model" library_version="18" library_locally_modified="yes">
@@ -17237,11 +17242,6 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <packageinstances>
 <packageinstance name="TSOT23-6"/>
-</packageinstances>
-</package3d>
-<package3d name="3015" urn="urn:adsk.eagle:package:5760618/3" type="model" library_version="18" library_locally_modified="yes">
-<packageinstances>
-<packageinstance name="3015"/>
 </packageinstances>
 </package3d>
 <package3d name="MSOP-8" urn="urn:adsk.eagle:package:6695531/2" type="model" library_version="18" library_locally_modified="yes">
@@ -17252,6 +17252,13 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <package3d name="HM-11" urn="urn:adsk.eagle:package:7425991/2" type="model" library_version="19" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="HM-11"/>
+</packageinstances>
+</package3d>
+<package3d name="INDC6161X450" urn="urn:adsk.eagle:package:4708503/3" type="model" library_version="20" library_locally_modified="yes">
+<description>Chip, 6.10 X 6.10 X 4.50 mm body
+&lt;p&gt;Chip package with body size 6.10 X 6.10 X 4.50 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="INDC6161X450"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -17324,7 +17331,7 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ME3116" urn="urn:adsk.eagle:component:5772238/1" library_version="18" library_locally_modified="yes">
+<deviceset name="SY8113" library_version="20" library_locally_modified="yes">
 <gates>
 <gate name="A" symbol="ME3116" x="0" y="0"/>
 </gates>
@@ -17340,25 +17347,6 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:5549507/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3015-INDUCTOR" urn="urn:adsk.eagle:component:5760619/2" library_version="18" library_locally_modified="yes">
-<gates>
-<gate name="A" symbol="INDUCTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="3015">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5760618/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -17427,6 +17415,25 @@ based on TI CC2540/CC2541</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:7425991/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="6045-3.6A-INDUCTOR" urn="urn:adsk.eagle:component:4712119/1" locally_modified="yes" library_version="20" library_locally_modified="yes">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="INDC6161X450">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:4708503/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -34913,7 +34920,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="U$2" library="LCSC" library_urn="urn:adsk.eagle:library:4712115" deviceset="ME3116" device="" package3d_urn="urn:adsk.eagle:package:5549507/2"/>
+<part name="U$2" library="LCSC" library_urn="urn:adsk.eagle:library:4712115" deviceset="SY8113" device="" package3d_urn="urn:adsk.eagle:package:5549507/2"/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:4716215" deviceset="USB_MICRO-B" device="_FEMALE-SMT" package3d_urn="urn:adsk.eagle:package:4717362/2"/>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="22"/>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="22"/>
@@ -34921,8 +34928,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="47pF"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="T1" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="BC847" device="" package3d_urn="urn:adsk.eagle:package:29904/2"/>
-<part name="T2" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="BC847" device="" package3d_urn="urn:adsk.eagle:package:29904/2"/>
+<part name="T1" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="BC847" device="" package3d_urn="urn:adsk.eagle:package:29904/2" value="S8050"/>
+<part name="T2" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="BC847" device="" package3d_urn="urn:adsk.eagle:package:29904/2" value="S8050"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1.5k"/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="36k"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -34936,10 +34943,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="DGND" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="DGND" device=""/>
-<part name="U$4" library="LCSC" library_urn="urn:adsk.eagle:library:4712115" deviceset="3015-INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5760618/3"/>
 <part name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="56k"/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="13.7k"/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="DGND" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
@@ -35000,6 +35006,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 <part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:43416/2"/>
 <part name="C10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="47pF"/>
+<part name="C13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
+<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$6" library="LCSC" library_urn="urn:adsk.eagle:library:4712115" deviceset="6045-3.6A-INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:4708503/3"/>
+<part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -35028,6 +35038,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="203.2" y="-58.42" size="6.4516" layer="94">PINOUT</text>
 <text x="66.04" y="-58.42" size="6.4516" layer="94">POWER SUPPLY</text>
 <text x="-127" y="-81.28" size="6.4516" layer="94">AUTO-RESET</text>
+<text x="248.92" y="-175.26" size="2.54" layer="94">1.0</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-66.04" y="7.62" smashed="yes">
@@ -35123,8 +35134,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="-116.84" y="-165.1" size="1.778" layer="96"/>
 </instance>
 <instance part="T1" gate="G$1" x="-88.9" y="-127" smashed="yes">
-<attribute name="NAME" x="-99.06" y="-119.38" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-99.06" y="-121.92" size="1.778" layer="96"/>
+<attribute name="NAME" x="-93.98" y="-119.38" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-93.98" y="-121.92" size="1.778" layer="96"/>
 </instance>
 <instance part="T2" gate="G$1" x="-76.2" y="-106.68" smashed="yes">
 <attribute name="NAME" x="-71.12" y="-101.6" size="1.778" layer="95"/>
@@ -35174,10 +35185,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </instance>
 <instance part="GND10" gate="G$1" x="66.04" y="-139.7" smashed="yes">
 <attribute name="VALUE" x="66.04" y="-139.954" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="U$4" gate="A" x="78.74" y="-109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="72.39" y="-106.68" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="85.09" y="-106.68" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C9" gate="G$1" x="66.04" y="-96.52" smashed="yes">
 <attribute name="NAME" x="67.564" y="-96.139" size="1.778" layer="95"/>
@@ -35313,9 +35320,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="62.23" y="-13.7414" size="1.778" layer="95"/>
 <attribute name="VALUE" x="62.23" y="-18.542" size="1.778" layer="96"/>
 </instance>
-<instance part="R23" gate="G$1" x="66.04" y="-22.86" smashed="yes">
-<attribute name="NAME" x="62.23" y="-21.3614" size="1.778" layer="95"/>
-<attribute name="VALUE" x="62.23" y="-26.162" size="1.778" layer="96"/>
+<instance part="R23" gate="G$1" x="81.28" y="-22.86" smashed="yes">
+<attribute name="NAME" x="77.47" y="-21.3614" size="1.778" layer="95"/>
+<attribute name="VALUE" x="77.47" y="-26.162" size="1.778" layer="96"/>
 </instance>
 <instance part="R24" gate="G$1" x="66.04" y="-30.48" smashed="yes">
 <attribute name="NAME" x="62.23" y="-28.9814" size="1.778" layer="95"/>
@@ -35325,9 +35332,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="57.912" y="-11.684" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="57.912" y="-9.525" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED2" gate="G$1" x="53.34" y="-22.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="57.912" y="-19.304" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="57.912" y="-17.145" size="1.778" layer="96" rot="R180"/>
+<instance part="LED2" gate="G$1" x="68.58" y="-22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.152" y="-19.304" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="73.152" y="-17.145" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="LED3" gate="G$1" x="53.34" y="-30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="57.912" y="-26.924" size="1.778" layer="95" rot="R180"/>
@@ -35403,6 +35410,20 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="C10" gate="G$1" x="106.68" y="-114.3" smashed="yes">
 <attribute name="NAME" x="108.204" y="-113.919" size="1.778" layer="95"/>
 <attribute name="VALUE" x="108.204" y="-118.999" size="1.778" layer="96"/>
+</instance>
+<instance part="C13" gate="G$1" x="147.32" y="15.24" smashed="yes">
+<attribute name="NAME" x="148.844" y="15.621" size="1.778" layer="95"/>
+<attribute name="VALUE" x="148.844" y="10.541" size="1.778" layer="96"/>
+</instance>
+<instance part="GND24" gate="1" x="147.32" y="2.54" smashed="yes">
+<attribute name="VALUE" x="144.78" y="0" size="1.778" layer="96"/>
+</instance>
+<instance part="U$6" gate="G$1" x="78.74" y="-109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="72.39" y="-106.68" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="85.09" y="-106.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND25" gate="1" x="96.52" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="93.98" y="-38.1" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -35606,6 +35627,18 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="162.56" y1="-119.38" x2="162.56" y2="-137.16" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND24" gate="1" pin="GND"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="5.08" x2="147.32" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="-22.86" x2="96.52" y2="-22.86" width="0.1524" layer="91"/>
+<label x="91.44" y="-22.86" size="1.778" layer="95"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="96.52" y1="-22.86" x2="96.52" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -35702,22 +35735,22 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="VCC"/>
-<wire x1="134.62" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="17.78" x2="147.32" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="17.78" x2="154.94" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<junction x="147.32" y="17.78"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="50.8" y1="-15.24" x2="45.72" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-15.24" x2="45.72" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="50.8" y1="-22.86" x2="45.72" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-22.86" x2="45.72" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="45.72" y="-15.24"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="50.8" y1="-30.48" x2="45.72" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-30.48" x2="45.72" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="45.72" y="-22.86"/>
 <wire x1="45.72" y1="-12.7" x2="45.72" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="SUPPLY16" gate="G$1" pin="3.3V"/>
 <wire x1="45.72" y1="-10.16" x2="45.72" y2="-7.62" width="0.1524" layer="91"/>
@@ -36054,9 +36087,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="-124.46" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="-22.86" x2="81.28" y2="-22.86" width="0.1524" layer="91"/>
-<label x="76.2" y="-22.86" size="1.778" layer="95"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="66.04" y1="-22.86" x2="50.8" y2="-22.86" width="0.1524" layer="91"/>
+<label x="55.88" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -36327,12 +36360,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="U$2" gate="A" pin="SW"/>
 <wire x1="58.42" y1="-109.22" x2="66.04" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-109.22" x2="66.04" y2="-124.46" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="A" pin="1"/>
 <wire x1="71.12" y1="-109.22" x2="66.04" y2="-109.22" width="0.1524" layer="91"/>
 <junction x="66.04" y="-109.22"/>
 <wire x1="66.04" y1="-109.22" x2="66.04" y2="-101.6" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="2"/>
 <pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="U$6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -36462,7 +36495,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-22.86" x2="60.96" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-22.86" x2="76.2" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -36502,7 +36535,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="N$24" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="A" pin="2"/>
 <wire x1="86.36" y1="-109.22" x2="99.06" y2="-109.22" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="99.06" y1="-109.22" x2="106.68" y2="-109.22" width="0.1524" layer="91"/>
@@ -36511,6 +36543,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="106.68" y1="-109.22" x2="111.76" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="-111.76" x2="106.68" y2="-109.22" width="0.1524" layer="91"/>
 <junction x="106.68" y="-109.22"/>
+<pinref part="U$6" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

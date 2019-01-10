@@ -1,0 +1,79 @@
+{
+	"packages": [{
+		"maintainer": "minh7a6",
+		"email": "?",
+		"platforms": [{
+			"version": "0.1.0",
+			"name": "Minh7a6's Arduino",
+			"boards": [{
+					"name": "MinhUNO32"
+				},
+				{
+					"name": "MinhUNO32 BLE"
+				}
+			],
+			"size": "3681613",
+			"architecture": "STM32F1",
+			"checksum": "SHA-256:72A76D7EEC81D4C7A21913E5F7A631969DED8549D32324E44778EC76660AAFD9",
+			"toolsDependencies": [{
+					"version": "2018.12.3",
+					"name": "stm32tools",
+					"packager": "stm32duino"
+				},
+				{
+					"version": "4.8.3-2014q1",
+					"name": "arm-none-eabi-gcc",
+					"packager": "arduino"
+				}
+			],
+			"url": "https://github.com/minh7a6/MinhUNO32-BLE/raw/master/MinhUNO/STM32F1-v1.0.zip",
+			"category": "STM32",
+			"archiveFileName": "STM32F1-v1.0.zip"
+		}],
+		"tools": [{
+			"systems": [{
+					"checksum": "SHA-256:820a0593c6c051002eb922b06753e5a47995d1899baff79699ddea41e379f726",
+					"url": "http://dan.drown.org/stm32duino/tools_win-2018.12.3.zip",
+					"archiveFileName": "tools_win-2018.12.3.zip",
+					"host": "i686-mingw32",
+					"size": "5753102"
+				},
+				{
+					"checksum": "SHA-256:4052bcea867a9856c3efe74de5692d19af1fc8f903a6ad9a0dbf51ab640f10c6",
+					"url": "http://dan.drown.org/stm32duino/tools_macosx-2018.12.3.tar.gz",
+					"archiveFileName": "tools_macosx-2018.12.3.tar.gz",
+					"size": "817179",
+					"host": "x86_64-apple-darwin"
+				},
+				{
+					"checksum": "SHA-256:4052bcea867a9856c3efe74de5692d19af1fc8f903a6ad9a0dbf51ab640f10c6",
+					"url": "http://dan.drown.org/stm32duino/tools_macosx-2018.12.3.tar.gz",
+					"archiveFileName": "tools_macosx-2018.12.3.tar.gz",
+					"host": "i386-apple-darwin",
+					"size": "817179"
+				},
+				{
+					"checksum": "SHA-256:72ae078677bf8299826e5d789c993b21fc97bd6ba0a2a3ad3f92c1fdc20e73cf",
+					"url": "http://dan.drown.org/stm32duino/tools_linux64-2018.12.3.tar.gz",
+					"archiveFileName": "tools_linux64-2018.12.3.tar.gz",
+					"size": "951356",
+					"host": "x86_64-pc-linux-gnu"
+				},
+				{
+					"checksum": "SHA-256:4c1d8383c8d0a0b3a4d2def19b9517a91dc8bac184b86370cc1b80d835c19097",
+					"url": "http://dan.drown.org/stm32duino/tools_linux-2018.12.3.tar.gz",
+					"archiveFileName": "tools_linux-2018.12.3.tar.gz",
+					"host": "i686-pc-linux-gnu",
+					"size": "898896"
+				}
+			],
+			"version": "2018.12.3",
+			"name": "stm32tools"
+		}],
+		"help": {
+			"online": "http://www.stm32duino.com/"
+		},
+		"websiteURL": "http://www.stm32duino.com/",
+		"name": "stm32duino"
+	}]
+}

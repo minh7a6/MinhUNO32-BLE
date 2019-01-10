@@ -15,7 +15,7 @@
                      "name" : "MinhUNO32 BLE"
                   }
 				],
-               "size" : 3674477,
+               "size" : 3681613,
                "architecture" : "STM32F1",
                "checksum" : "SHA-256:72A76D7EEC81D4C7A21913E5F7A631969DED8549D32324E44778EC76660AAFD9",
                "toolsDependencies" : [

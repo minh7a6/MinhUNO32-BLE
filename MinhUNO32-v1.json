@@ -5,8 +5,8 @@
          "email" : "?",
          "platforms" : [
             {
-               "version" : "1.0.0",
-               "name" : "MinhUNO32 Boards",
+               "version" : "0.1.0",
+               "name" : "Minh7a6's Arduino",
                "boards" : [
                   {
                      "name" : "MinhUNO32"

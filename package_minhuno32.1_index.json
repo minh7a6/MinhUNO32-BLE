@@ -29,8 +29,7 @@
 			"url": "https://github.com/minh7a6/MinhUNO32-BLE/raw/master/MinhUNO/STM32F1-v1.0.zip",
 			"category": "STM32",
 			"archiveFileName": "STM32F1-v1.0.zip"
-		}
-		{
+		}, {
 			"version": "0.1.1",
 			"name": "Minh7a6's Arduino",
 			"boards": [{

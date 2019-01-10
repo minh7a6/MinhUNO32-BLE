@@ -29,6 +29,34 @@
 			"url": "https://github.com/minh7a6/MinhUNO32-BLE/raw/master/MinhUNO/STM32F1-v1.0.zip",
 			"category": "STM32",
 			"archiveFileName": "STM32F1-v1.0.zip"
+		}
+		{
+			"version": "0.1.1",
+			"name": "Minh7a6's Arduino",
+			"boards": [{
+					"name": "MinhUNO32"
+				},
+				{
+					"name": "MinhUNO32 BLE"
+				}
+			],
+			"size": "3676946",
+			"architecture": "STM32F1",
+			"checksum": "SHA-256:AABC63595FF7D8D5AB6B045C26FC59448330713FBC4433FB73A37232250E2C28",
+			"toolsDependencies": [{
+					"version": "2018.12.3",
+					"name": "stm32tools",
+					"packager": "stm32duino"
+				},
+				{
+					"version": "4.8.3-2014q1",
+					"name": "arm-none-eabi-gcc",
+					"packager": "arduino"
+				}
+			],
+			"url": "https://github.com/minh7a6/MinhUNO32-BLE/raw/master/MinhUNO/STM32F1-v1.0.2.zip",
+			"category": "STM32",
+			"archiveFileName": "STM32F1-v1.0.2.zip"
 		}],
 		"tools": [{
 			"systems": [{

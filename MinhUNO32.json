@@ -30,9 +30,9 @@
                      "packager" : "arduino"
                   }
                ],
-               "url" : "https://github.com/minh7a6/MinhUNO32-BLE/raw/master/MinhUNO/STM32F1-2019.1.9.zip",
+               "url" : "https://github.com/minh7a6/MinhUNO32-BLE/raw/master/MinhUNO/STM32F1-v1.0.zip",
                "category" : "STM32",
-               "archiveFileName" : "STM32F1-2019.1.9.zip"
+               "archiveFileName" : "STM32F1-v1.0.zip"
             }
          ],
  "tools" : [

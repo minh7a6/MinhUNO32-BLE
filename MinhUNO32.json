@@ -17,7 +17,7 @@
 				],
                "size" : 3674477,
                "architecture" : "STM32F1",
-               "checksum" : "SHA-256:58035A2A93227388DB446A436C88669B683A99147CCF41FE3A6E79895667B26E",
+               "checksum" : "SHA-256:72A76D7EEC81D4C7A21913E5F7A631969DED8549D32324E44778EC76660AAFD9",
                "toolsDependencies" : [
                   {
                      "version" : "2018.12.3",

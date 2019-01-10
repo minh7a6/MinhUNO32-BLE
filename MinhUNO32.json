@@ -13,7 +13,7 @@
                   },
                   {
                      "name" : "MinhUNO32 BLE"
-                  },
+                  }
 				],
                "size" : 3674477,
                "architecture" : "STM32F1",
